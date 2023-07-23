@@ -1,9 +1,14 @@
-import logo from './logo.svg';
+import { Route } from 'react-router-dom/cjs/react-router-dom.min';
 import './App.css';
+import Homepage from './pages/Homepage';
+import Workpage from './pages/Workpage';
 
 function App() {
   return (
-    <h1>This is me</h1>
+    <div className='App'>
+      <Route path='/' component={Homepage} exact />
+      <Route path='/work' component={Workpage} />
+    </div> 
   );
 }
 
