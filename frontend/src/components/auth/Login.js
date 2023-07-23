@@ -12,8 +12,12 @@ const Login = () => {
   const [show, setshow] = useState(false);
 
   const handleClick = ()=>{
-        setshow(!show);
-    }
+    setshow(!show);
+  }
+
+  function submitHandler(){
+
+  }
 
   return (
     <VStack spacing={"5px"}>
@@ -44,7 +48,7 @@ const Login = () => {
             padding={"20px"}
             width={"100%"}
             style={{marginTop: 15}}
-            // onClick={submitHandler}
+            onClick={submitHandler}
         >Login</Button>
     </VStack>
   )
